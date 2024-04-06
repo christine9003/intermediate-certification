@@ -16,8 +16,7 @@ int SumOfElements(int n, int m)
 }
 
 
-
-//Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+//Задача 2: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
 Console.Clear();
 int Prompt(string message)
@@ -27,9 +26,23 @@ int Prompt(string message)
     return result;
 }
 
+
+//Задача 3: Задайте произвольный массив. Выведете его элементы, начиная с конца. Использовать рекурсию, не использовать циклы.
+
+void Len(int num)
+{
+    if (num == 0) return;
+    Console.Write($"{num} ");
+    Len(num - 1);
+}
+Console.Write("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Len(n);
+
 int Akkerman(int m, int n)
 {
     if (m == 0) return n + 1;
     if (m > 0 && n == 0) return Akkerman(m - 1, 1);
+    
     else return Akkerman(m - 1, Akkerman(m, n - 1));
 }
