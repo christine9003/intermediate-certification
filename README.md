@@ -2,9 +2,9 @@
 //Использовать рекурсию, не использовать циклы.
 
 Console.Clear();
-int Prompt(string message)
+int Prompt(string report)
 {
-    Console.Write(message);
+    Console.Write(report);
     int result = Convert.ToInt32(Console.ReadLine());
     return result;
 }
@@ -19,9 +19,9 @@ int SumOfElements(int n, int m)
 //Задача 2: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
 Console.Clear();
-int Prompt(string message)
+int Prompt(string report)
 {
-    Console.Write(message);
+    Console.Write(report);
     int result = Convert.ToInt32(Console.ReadLine());
     return result;
 }
@@ -29,15 +29,15 @@ int Prompt(string message)
 
 //Задача 3: Задайте произвольный массив. Выведете его элементы, начиная с конца. Использовать рекурсию, не использовать циклы.
 
-void Len(int num)
+void Lens(int num)
 {
     if (num == 0) return;
     Console.Write($"{num} ");
-    Len(num - 1);
+    Lens(num - 1);
 }
 Console.Write("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine());
-Len(n);
+Lens(n);
 
 int Akkerman(int m, int n)
 {
