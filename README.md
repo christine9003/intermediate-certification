@@ -2,8 +2,10 @@
 //Использовать рекурсию, не использовать циклы.
 
 using System;
+
 class Program
 {
+
     static void Main(string[] args)
     
     {
